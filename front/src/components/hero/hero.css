@@ -72,3 +72,7 @@
 .hero-buttons button:hover {
     transform: scale(1.05, 1.05);
 }
+
+.hero-btn-donate {
+    background-color: var(--yellow);
+}

@@ -16,3 +16,8 @@
     --text:#2E2E2E;
 
 }
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+.home-container {
+    background: var(--beige);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h3 {
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.container p {
+    max-width: 750px;
+
+    font-size: 1.2rem;
+    line-height: 1.7;
+
+    color: #3f3f3f;
+}
+
+.home-about-me-actions {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.home-about-me-actions button {
+    padding: 14px 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--yellow);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.home-about-me-actions button:hover {
+    transform: scale(1.05);
+}

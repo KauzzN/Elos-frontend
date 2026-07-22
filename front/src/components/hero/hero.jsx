@@ -15,7 +15,7 @@ function Hero() {
                 <p>Pequena descrição da ONG...</p>
 
                 <div className="hero-buttons">
-                    <button>Doar</button>
+                    <button className="hero-btn-donate">Doar</button>
                     <button>Projetos</button>
                 </div>
 
