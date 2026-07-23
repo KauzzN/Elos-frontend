@@ -1,0 +1,69 @@
+.volunteer{
+
+    padding:10px 0;
+
+    background:var(--green-secondary);
+
+}
+
+.volunteer .container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+.volunteer-icon{
+
+    color:var(--green-primary);
+
+}
+
+.volunteer h2{
+
+    font-size:2.5rem;
+
+    color:var(--green-primary);
+
+}
+
+.volunteer p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+}
+
+.volunteer-btn{
+
+    text-decoration:none;
+
+    margin-top:10px;
+
+    background:var(--yellow);
+
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.volunteer-btn:hover{
+
+    transform:scale(1.05);
+
+}

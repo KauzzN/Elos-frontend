@@ -1,0 +1,29 @@
+.impact-section{
+
+    padding:20px 0;
+
+}
+
+.impact-section h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    color:var(--green);
+
+    font-size:2.5rem;
+
+}
+
+.impact-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}

@@ -1,0 +1,68 @@
+.cta-section{
+
+    margin-top: 50px;
+
+    padding:20px 0;
+    width: 100%;
+    background: var(--brown);
+
+}
+
+.cta-content{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.cta-content h2{
+
+    font-size:2.5rem;
+
+    color: white;
+
+}
+
+.cta-content p{
+
+    max-width:700px;
+
+    line-height:1.7;
+
+    color: white;
+
+}
+
+.cta-content button{
+
+    margin-top: 20px;
+
+    width:250px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--yellow);
+
+    color:white;
+
+    font-size:1rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.cta-content button:hover{
+
+    transform:scale(1.05);
+
+}

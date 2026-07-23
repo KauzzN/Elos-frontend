@@ -1,5 +1,12 @@
+import CTASection from "../../components/CTASection/ctaSection";
+import Footer from "../../components/footer/footer";
+
 import Hero from "../../components/hero/hero";
+import ImpactSection from "../../components/ImpactSection/impactSection";
 import NavBar from "../../components/navbar/navbar";
+import ProjectCard from "../../components/projectCard/projectCard";
+import ProjectsSection from "../../components/projectSession/projectSession";
+import VolunteerSection from "../../components/volunterSection/volunterSection";
 import "./home.css"
 
 function Home() {
@@ -25,6 +32,16 @@ function Home() {
                     </div>
                 </div>
 
+            <ProjectsSection />
+
+            <ImpactSection />
+
+
+            <CTASection />
+
+            <VolunteerSection />
+
+            <Footer />
             </section>
         </div>
     )
