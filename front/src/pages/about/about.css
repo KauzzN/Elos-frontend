@@ -1,0 +1,232 @@
+.about-hero{
+
+    padding:50px 0;
+
+    background:var(--green);
+
+    color: black;
+
+    text-align:center;
+
+}
+
+.about-hero h1{
+
+    font-size:3rem;
+
+    margin-bottom:20px
+
+}
+
+.about-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size: 1.45rem;
+
+}
+
+/* ========================= */
+
+.about-history{
+
+    padding:90px 0;
+
+}
+
+.history-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.history-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.placeholder{
+
+    width:100%;
+
+    height:350px;
+
+    background:#ddd;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:15px;
+
+}
+
+/* ========================= */
+
+.about-mvv{
+
+    padding:90px 0;
+
+    background:var(--beige);
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition: all .3s ease;
+
+    border: 1px solid transparent;
+
+}
+
+.card:hover {
+    transform: scale(1.05, 1.05);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+
+    border-top: 5px solid var(--blue);
+}
+
+.card ul{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+/* ========================= */
+
+.about-areas{
+
+    padding:90px 0;
+
+}
+
+.about-areas h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.areas-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.area-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+    border: 1px solid transparent;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+
+}
+
+.area-card:hover {
+    transform: scale(1.05, 1.05);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+
+    border: 1px solid var(--green-primary);
+}
+
+/* ========================= */
+
+.about-differentials{
+
+    padding:90px 0;
+
+    background:var(--green-secondary);
+
+}
+
+.about-differentials h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.differentials-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.diff-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition: all .3s ease;
+
+}
+
+.diff-card:hover {
+    transform: scale(1.05, 1.05);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+}

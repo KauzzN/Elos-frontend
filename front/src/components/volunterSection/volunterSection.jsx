@@ -20,9 +20,7 @@ function VolunteerSection() {
                 <h2>Seja um Voluntário</h2>
 
                 <p>
-                    Faça parte da transformação da nossa comunidade.
-                    Sua dedicação pode ajudar pessoas, projetos e
-                    o meio ambiente.
+                    Preencha nosso formulário de voluntariado e participe das próximas ações
                 </p>
 
                 <a
@@ -31,7 +29,7 @@ function VolunteerSection() {
                     rel="noopener noreferrer"
                     className="volunteer-btn"
                 >
-                    Quero Participar
+                    Quero ser voluntário
                 </a>
 
             </div>

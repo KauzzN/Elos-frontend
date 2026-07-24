@@ -22,20 +22,20 @@ function ImpactSection(){
 
                     <ImpactCard
                         icon={<Trees size={42}/>}
-                        number="+1200"
-                        title="Árvores plantadas"
+                        number="+150"
+                        title="Marisqueiras participantes"
                     />
 
                     <ImpactCard
                         icon={<Users size={42}/>}
-                        number="+350"
-                        title="Famílias atendidas"
+                        number="5"
+                        title="Jovens agentes ambientais"
                     />
 
                     <ImpactCard
                         icon={<Recycle size={42}/>}
-                        number="+18"
-                        title="Projetos realizados"
+                        number="2"
+                        title="Projetos em andamento"
                     />
 
                 </div>

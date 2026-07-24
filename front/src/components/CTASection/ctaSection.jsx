@@ -11,8 +11,7 @@ function CTASection() {
                     <h2>Quer fazer parte dessa transformação?</h2>
 
                     <p>
-                        Seu apoio ajuda nossos projetos ambientais,
-                        educacionais e sociais a alcançarem cada vez mais pessoas.
+                        Sua contribuição ajuda a transformar vidas e preservar o meio ambiente.
                     </p>
 
                     <button>Fazer Doação</button>

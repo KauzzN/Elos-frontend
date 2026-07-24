@@ -1,5 +1,6 @@
 import { Image, Leaf } from "lucide-react"
 import "./navbar.css"
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -11,19 +12,35 @@ function NavBar() {
             </div>
 
             <div className="navbar-actions">
-                <a className="navbar-btn">Quem somos</a>
+                <Link 
+                    to={"/about"}
+                    className="navbar-btn">
+                    Quem somos
+                </Link>
 
                 <div className="navbar-divider"></div>
 
-                <a className="navbar-btn">Projetos</a>
+                <Link 
+                    to={"/projetos"}
+                    className="navbar-btn">
+                    Projetos
+                </Link>
 
                 <div className="navbar-divider"></div>
 
-                <a className="navbar-btn">Galeria</a>
+                <Link 
+                    to={"/about"}
+                    className="navbar-btn">
+                    Galeria
+                </Link>
 
                 <div className="navbar-divider"></div>
 
-                <a className="navbar-btn">Contato</a>
+                <Link 
+                    to={"/about"}
+                    className="navbar-btn">
+                    Contato
+                </Link>
                 
                 <button className="navbar-donations">Doações</button>
             </div>

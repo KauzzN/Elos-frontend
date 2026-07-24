@@ -18,20 +18,14 @@ function ProjectsSection() {
 
                     <ProjectCard
                         image={floresta}
-                        title="Reflorestamento"
-                        description="Plantio de árvores em áreas degradadas."
+                        title="Território Vivo"
+                        description="Recuperação de nascentes com protagonismo juvenil no Alto Gramame."
                     />
 
                     <ProjectCard
                         image={floresta}
-                        title="Educação Ambiental"
-                        description="Projetos em escolas para conscientização."
-                    />
-
-                    <ProjectCard
-                        image={floresta}
-                        title="Reciclagem"
-                        description="Campanhas de coleta seletiva."
+                        title="Cozinha Nossa de Acaú"
+                        description="Gastronomia sustentável desenvolvida junto às marisqueiras da AMA."
                     />
 
                 </div>
