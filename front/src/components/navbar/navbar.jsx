@@ -2,6 +2,7 @@ import { Image, Leaf } from "lucide-react"
 import "./navbar.css"
 import { Link } from "react-router-dom";
 
+
 function NavBar() {
     return (
         <div className="navbar-container">
@@ -42,7 +43,11 @@ function NavBar() {
                     Contato
                 </Link>
                 
-                <button className="navbar-donations">Doações</button>
+                <Link 
+                    to={"/doacoes"} 
+                    className="navbar-donations">
+                    Doações
+                </Link>
             </div>
 
 

@@ -68,11 +68,14 @@
     border: none;
     border-radius: 10px;
 
-    font-size: 1.05rem;
+    font-size: 1.08rem;
+    font-weight: 800;
     color: white;
 
     cursor: pointer;
     transition: all .3s ease;
+
+    text-decoration: none;
 }
 
 .navbar-donations:hover {
