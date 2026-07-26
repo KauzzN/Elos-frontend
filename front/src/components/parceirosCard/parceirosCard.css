@@ -1,0 +1,40 @@
+.partnership-card{
+
+    background:var(--beige);
+
+    padding:30px;
+
+    border-radius:12px;
+
+    border-left:6px solid var(--green);
+
+    transition:.3s;
+}
+
+.partnership-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.partnership-icon{
+
+    color:var(--green);
+
+    margin-bottom:15px;
+}
+
+.partnership-card h3{
+
+    color:var(--blue);
+
+    margin-bottom:10px;
+}
+
+.partnership-card p{
+
+    line-height:1.7;
+
+    color:#555;
+}

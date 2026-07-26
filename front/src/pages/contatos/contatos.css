@@ -1,0 +1,33 @@
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input{
+
+    height:55px;
+
+}
+
+.contact-form textarea{
+
+    height:180px;
+
+    resize:none;
+
+}

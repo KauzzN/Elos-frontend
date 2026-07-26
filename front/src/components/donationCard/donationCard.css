@@ -1,0 +1,42 @@
+.donation-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    transition:.3s;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+}
+
+.donation-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.donation-icon{
+
+    color:var(--green);
+
+    font-size:2.8rem;
+}
+
+.donation-card h3{
+
+    color:var(--blue);
+}
+
+.donation-card p{
+
+    color:#555;
+
+    line-height:1.7;
+}

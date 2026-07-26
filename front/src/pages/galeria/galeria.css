@@ -1,0 +1,34 @@
+.galeria-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery-item{
+
+    height:260px;
+
+    border-radius:15px;
+
+    background:#ddd;
+
+    transition:.3s;
+
+}
+
+.gallery-item:hover{
+
+    transform:scale(1.02);
+
+}

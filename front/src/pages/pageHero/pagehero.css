@@ -1,0 +1,37 @@
+.pagehero-container{
+
+    width:100%;
+    height:320px;
+
+    background-image: linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("../../assets/Floresta.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.pagehero-overlay{
+
+    width:100%;
+}
+
+.pagehero-overlay h1{
+
+    color:white;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.pagehero-overlay p{
+
+    color:white;
+    max-width:600px;
+    font-size:1.2rem;
+    line-height:1.7;
+}

@@ -27,11 +27,35 @@ function Footer() {
                         Quem somos
                     </Link>
                     
-                    <a href="">Projetos</a>
-                    <a href="">Galeria</a>
-                    <a href="">Doações</a>
-                    <a href="">Parcerias</a>
-                    <a href="">Contato</a>
+                    <Link 
+                        to={"/projetos"}
+                        className="footer-link-button">
+                        Projetos
+                    </Link>
+                    
+                    <Link 
+                        to={"/galeria"}
+                        className="footer-link-button">
+                        Galeria
+                    </Link>
+
+                    <Link 
+                        to={"/doacoes"}
+                        className="footer-link-button">
+                        Doações
+                    </Link>
+                    
+                    <Link 
+                        to={"/parceiros"}
+                        className="footer-link-button">
+                        Parcerias
+                    </Link>
+                    
+                    <Link 
+                        to={"/contatos"}
+                        className="footer-link-button">
+                        Contatos
+                    </Link>
                     <a href="">Blog</a>
 
                 </nav>

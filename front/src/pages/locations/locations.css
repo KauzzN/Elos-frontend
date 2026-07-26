@@ -1,0 +1,22 @@
+.map{
+    position:relative;
+}
+
+.pin{
+    position:absolute;
+}
+
+.pin-jp{
+    top:39%;
+    left:94%;
+}
+
+.pin-pedras{
+    top:45%;
+    left:91%;
+}
+
+.pin-acau{
+    top:57%;
+    left:95%;
+}

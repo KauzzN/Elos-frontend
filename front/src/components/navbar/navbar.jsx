@@ -29,7 +29,7 @@ function NavBar() {
                 <div className="navbar-divider"></div>
 
                 <Link 
-                    to={"/about"}
+                    to={"/galeria"}
                     className="navbar-btn">
                     Galeria
                 </Link>
@@ -37,7 +37,7 @@ function NavBar() {
                 <div className="navbar-divider"></div>
 
                 <Link 
-                    to={"/about"}
+                    to={"/contatos"}
                     className="navbar-btn">
                     Contato
                 </Link>
