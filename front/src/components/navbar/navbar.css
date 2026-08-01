@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 18px 2%;
-
+    align-items: center; /* Alinha o logo e as ações verticalmente */
+    padding: 15px 5%; /* Ajustado o espaçamento lateral para respirar melhor */
     max-width: 100%;
-
     background: var(--beige);
 }
 
@@ -14,106 +12,103 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
-
+    gap: 10px;
     text-decoration: none;
-    color: inherit;
-
+    color: var(--green-primary); /* Força a cor verde no logo */
     cursor: pointer;
 }
 
 .navbar-logo:hover {
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 .navbar-logo h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: sans-serif;
+    font-weight: 700;
 }
 
-.navbar-logo p {
-    background: gray;
-    padding: 8px 10px;
-
-    border-radius: 6px;
-}
+/* REMOVIDO: .navbar-logo p pois não existe no HTML */
 
 .navbar-actions {
     display: flex;
-    padding: 20px;
+    padding: 0; /* Removido estofamento desnecessário */
     gap: 15px;
-
     align-items: center;
 }
 
 .navbar-divider {
     width: 1px;
-    height: 30px;
-    border-left: 2px solid var(--green-primary);
-
+    height: 20px;
+    border-left: 2px solid var(--green-secondary); /* Suavizado o tom do divisor */
 }
 
+/* LINKS DO MENU (CORRIGIDO PARA EVITAR O TREMELIQUE) */
 .navbar-btn {
     cursor: pointer;
     color: var(--green-primary);
     font-weight: 600;
-    font-size: 1.2rem;
-
+    font-size: 1.1rem;
     text-decoration: none;
-
-    transition: all 0.30s ease;
+    padding: 8px 16px; /* Adicionado padding padrão aqui */
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
 .navbar-btn:hover {
-    background: var(--yellow);
-    padding: 10px 12px;
-    border-radius: 4px;
+    background: var(--green-secondary); /* Fundo verde claro combina mais com os links padrão */
+    color: var(--green-primary);
 }
 
+/* BOTÃO DE DOAÇÕES PRINCIPAL */
 .navbar-donations {
-    padding: 18px 25px;
+    padding: 12px 24px;
     background: var(--yellow);
     border: none;
     border-radius: 10px;
-
-    font-size: 1.08rem;
-    font-weight: 800;
-    color: white;
-
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text); /* Corrigido: texto escuro para contraste perfeito no amarelo */
     cursor: pointer;
     transition: all .3s ease;
-
     text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-donations:hover {
-    transform: scale(1.05, 1.05);
+    transform: translateY(-2px); /* Efeito de flutuar é mais sutil e moderno */
+    background: #e5af23; /* Tom de amarelo ligeiramente mais escuro */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width:768px){
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+        text-align: center;
+    }
 
-.navbar-container{
+    .navbar-actions {
+        flex-direction: column; /* Transforma o menu em uma lista vertical no mobile */
+        width: 100%;
+        gap: 10px;
+    }
 
-    flex-direction:column;
+    .navbar-btn {
+        width: 100%;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.4); /* Cria botões discretos no mobile */
+    }
 
-    gap:20px;
+    .navbar-donations {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
 
-    padding:20px;
-
-}
-
-.navbar-actions{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-.navbar-divider{
-
-    display:none;
-
-}
-
+    .navbar-divider {
+        display: none; /* Esconde os divisores em telas pequenas */
+    }
 }
