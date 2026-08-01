@@ -1,0 +1,83 @@
+/* Espaçamento geral das seções */
+.doacoes-container section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.donation-content h2, 
+.donation-box h2, 
+.transparency h2 {
+    color: var(--green-primary);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.donation-content p, 
+.transparency p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+/* Grid de Cards de Impacto */
+.donation-impact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Bloco de Dados Bancários */
+.donation-box {
+    background: var(--beige);
+    border-radius: 20px;
+    padding: 40px 20px !important;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.bank-details {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+/* Botão de Cópia Customizado */
+.donation-btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    background: var(--yellow);
+    color: var(--text); /* Alterado para a cor de texto escura para melhor leitura no fundo amarelo */
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-btn:hover {
+    transform: translateY(-3px);
+    background: #e5af23; /* Tom ligeiramente mais escuro e vivo de amarelo */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.donation-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .doacoes-container section {
+        padding: 35px 5%;
+    }
+    .donation-content h2, 
+    .donation-box h2, 
+    .transparency h2 {
+        font-size: 1.8rem;
+    }
+}

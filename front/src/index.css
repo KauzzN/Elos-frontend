@@ -1,22 +1,50 @@
-:root{
-
-    --green-primary:#2E7D32;
-    --green-secondary:#A5D6A7;
-
-    --blue:#1565C0;
-
-    --beige:#CBCDAD;
-
-    --brown:#8D6E63;
-
-    --yellow:#FBC02D;
-
-    --white:#FFFFFF;
-
-    --text:#2E2E2E;
-
+:root {
+    --green-primary: #2E7D32;
+    --green-secondary: #A5D6A7;
+    --blue: #1565C0;
+    --beige: #CBCDAD;
+    --brown: #8D6E63;
+    --yellow: #FBC02D;
+    --white: #FFFFFF;
+    --text: #2E2E2E;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--white);
+    color: var(--text);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Estrutura para o rodapé ficar sempre embaixo (Sticky Footer) */
+html, body, #root {
+    min-height: 100vh;
+}
+
+body, #root {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Componente de largura máxima centralizado */
 .container {
     width: min(1200px, 90%);
     margin: 0 auto;

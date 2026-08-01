@@ -1,5 +1,6 @@
 import NavBar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
+import equipe from "../../assets/equipe.jpeg"
 
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,6 @@ import "./about.css";
 function About() {
     return (
         <>
-            <NavBar />
 
             {/* Banner */}
             <section className="about-hero">
@@ -59,7 +59,7 @@ function About() {
 
                         {/* Depois coloque uma imagem */}
                         <div className="placeholder">
-                            Imagem da ONG
+                            <img src={equipe} alt="" />
                         </div>
 
                     </div>
@@ -216,7 +216,6 @@ function About() {
 
             </section>
 
-            <Footer />
         </>
     );
 }

@@ -17,8 +17,6 @@ function Parceiros(){
 
         <div className="parceiros-container">
 
-            <NavBar/>
-
             <PageHero
             title="Parcerias"
             />
@@ -136,15 +134,13 @@ function Parceiros(){
 
             </p>
 
-            <button>
+            <button className="partners-btn">
 
             Entrar em contato
 
             </button>
 
             </section>
-
-            <Footer/>
 
         </div>
 

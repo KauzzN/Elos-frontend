@@ -1,4 +1,4 @@
-import floresta from "../../assets/Floresta.jpg"
+import floresta from "../../assets/paisagem.jpeg"
 import "./hero.css"
 
 import { Link } from "react-router-dom";

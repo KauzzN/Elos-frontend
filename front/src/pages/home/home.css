@@ -1,142 +1,148 @@
 .home-container {
-    background: var(--beige);
+    background: var(--white); /* Mudado para branco para contrastar com o fundo bege dos parceiros */
     min-height: 100vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+/* SEÇÃO SOBRE A ELOS (Especificidade aumentada para evitar bugs globais) */
+.home-about {
+    padding: 80px 0;
 }
 
-.container h3 {
+.home-about h3 {
     font-size: 2.5rem;
     color: var(--blue);
+    margin-bottom: 20px;
 }
 
-.container p {
+.home-about p {
     max-width: 100%;
-
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.7;
-
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8;
     color: #3f3f3f;
+    margin-bottom: 30px;
 }
 
 .home-about-me-actions {
     display: flex;
-    justify-content: center;
-
+    justify-content: flex-start; /* Alinhado à esquerda por padrão no desktop */
     width: 100%;
 }
 
 .home-about-btn {
-    padding: 14px 40px;
-
+    padding: 14px 32px;
     display: flex;
     align-items: center;
-
     gap: 8px;
-
     text-decoration: none;
-
     border: none;
     border-radius: 8px;
-
     background: var(--yellow);
-    color: white;
-
+    color: var(--text); /* Alterado para texto escuro para melhor legibilidade no amarelo */
     font-size: 1rem;
     font-weight: 600;
-
     cursor: pointer;
-
     transition: .3s ease;
 }
 
-.home-about-me-actions button:hover {
-    transform: scale(1.05);
+.home-about-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    background: #e5af23;
 }
 
-.home-divider {
-    width: 100%;
-    border-bottom: 1px solid var(--brown);
-
-    margin: 80px 0;
-}
-
-.home-partners{
-
+/* SEÇÃO PARCEIROS */
+.home-partners {
     padding: 100px 0;
-
     background: var(--beige);
-
 }
 
-.home-partners h2{
-
+.home-partners h2 {
     text-align: center;
-
     font-size: 2.5rem;
-
-    color: var(--green);
-
+    color: var(--green-primary); /* Corrigido: usando a variável correta */
     margin-bottom: 20px;
-
 }
 
-.home-partners p{
-
+.home-partners .partners-subtitle {
     max-width: 750px;
-
     margin: 0 auto 60px;
-
     text-align: center;
-
     line-height: 1.7;
-
+    font-size: 1.1rem;
     color: #555;
-
+    font-weight: 400;
 }
 
-.partners-grid{
-
+.partners-grid {
     display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
-
 }
 
-.partner-card{
-
+.partner-card {
     height: 120px;
-
     background: white;
-
     border-radius: 14px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
-
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.04);
     transition: .3s ease;
-
 }
 
-.partner-card:hover{
+.partner-card p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #777;
+    text-align: center;
+}
 
+.partner-card:hover {
     transform: translateY(-5px);
-
+    box-shadow: 0 12px 25px rgba(0,0,0,.08);
 }
 
-.partner-card h3{
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 768px) {
+    .home-about {
+        padding: 60px 0;
+    }
 
-    color: var(--green);
+    .home-about h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
+    .home-about p {
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .home-about-me-actions {
+        justify-content: center; /* Centraliza o botão no celular */
+    }
+
+    .home-about-btn {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .home-partners {
+        padding: 60px 0;
+    }
+
+    .home-partners h2 {
+        font-size: 2rem;
+    }
+
+    .home-partners .partners-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Mantém em colunas se couber no mobile */
+    }
 }

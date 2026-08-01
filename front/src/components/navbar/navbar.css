@@ -14,8 +14,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
     gap: 5px;
+
+    text-decoration: none;
+    color: inherit;
+
+    cursor: pointer;
+}
+
+.navbar-logo:hover {
+    opacity: 0.9;
 }
 
 .navbar-logo h2 {
@@ -80,4 +88,32 @@
 
 .navbar-donations:hover {
     transform: scale(1.05, 1.05);
+}
+
+@media (max-width:768px){
+
+.navbar-container{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.navbar-actions{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.navbar-divider{
+
+    display:none;
+
+}
+
 }

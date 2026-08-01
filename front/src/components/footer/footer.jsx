@@ -1,4 +1,6 @@
 import "./footer.css";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 import { Link } from "react-router-dom";
 
@@ -56,24 +58,28 @@ function Footer() {
                         className="footer-link-button">
                         Contatos
                     </Link>
-                    <a href="">Blog</a>
 
                 </nav>
 
                 <div className="footer-contact">
 
                     <span>
-                        {/* Ícone */}
+                        <Mail />
                         contato@elos.org
                     </span>
 
                     <span>
-                        {/* Ícone */}
-                        (83) 99999-9999
+                        <Phone />
+                        (81) 8904-2769
                     </span>
 
                     <span>
-                        {/* Ícone */}
+                        <Phone />
+                        (83) 98601-1787
+                    </span>
+
+                    <span>
+                        <MapPin />
                         João Pessoa - PB
                     </span>
 
@@ -81,20 +87,8 @@ function Footer() {
 
                 <div className="footer-social">
 
-                    <a href="">
-                        {/* Instagram */}
-                    </a>
-
-                    <a href="">
-                        {/* Facebook */}
-                    </a>
-
-                    <a href="">
-                        {/* LinkedIn */}
-                    </a>
-
-                    <a href="">
-                        {/* YouTube */}
+                    <a href="https://www.instagram.com/elos.sustentabilidade/">
+                        <FaInstagram />
                     </a>
 
                 </div>

@@ -1,0 +1,116 @@
+.parceiros-container section {
+    padding: 40px 0;
+}
+
+.partnership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.steps div {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 30px;
+    background: var(--beige);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+
+    /* 1. CORREÇÃO DO TAMANHO DA FONTE */
+    font-size: 1rem; /* Define um tamanho padrão controlável (mude se achar pequeno) */
+    font-weight: 600;
+
+    /* 2. EVITA QUE PALAVRAS LONGAS SAIAM DO CARD */
+    overflow-wrap: break-word; /* Faz a palavra quebrar se for maior que o card */
+    word-wrap: break-word;     /* Suporte para navegadores antigos */
+    hyphens: auto;             /* Adiciona hífen na quebra se o navegador suportar */
+}
+
+.steps div:hover {
+    transform: translateY(-5px);
+}
+
+.parceiros-container section:nth-of-type(3) {
+    text-align: center;
+}
+
+.parceiros-container section:nth-of-type(3) h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.parceiros-container section:last-of-type {
+    text-align: center;
+    background: var(--green-secondary);
+    border-radius: 20px;
+    padding: 30px 20px; /* Aumentado o estofamento interno */
+    margin-bottom: 80px;
+}
+
+.parceiros-container section:last-of-type h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.parceiros-container section:last-of-type p {
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+.partners-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.partners-btn:hover {
+    transform: translateY(-3px);
+    background: var(--green-primary);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+}
+
+.partners-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+}
+
+/* RESPONSIVIDADE (MEDIA QUERIES) */
+@media (max-width: 768px) {
+    .parceiros-container section {
+        padding: 30px 0; /* Corrigido: padding menor ou igual para mobile */
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps div {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Garante que a seção com fundo colorido não cole na borda da tela do celular */
+    .parceiros-container {
+        padding: 0 5%; 
+    }
+}

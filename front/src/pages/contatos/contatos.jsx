@@ -5,7 +5,6 @@ import "./contatos.css"
 function Contatos() {
     return (
         <div className="contatos-container">
-            <NavBar />
 
             <section className="contact-hero">
 
@@ -40,41 +39,34 @@ function Contatos() {
 
                     </div>
 
-                    <form className="contact-form">
+                    <div className="contact-form">
 
-                        <input placeholder="Nome"/>
+                        <h2>Envie uma mensagem</h2>
 
-                        <input placeholder="Email"/>
+                        <p>
+                            Ficou com alguma dúvida, deseja conhecer nossos projetos,
+                            realizar uma parceria ou entrar em contato conosco?
+                        </p>
 
-                        <textarea placeholder="Mensagem"></textarea>
+                        <p>
+                            Clique no botão abaixo e preencha nosso formulário de contato.
+                            Retornaremos o mais breve possível.
+                        </p>
 
-                        <button>
-
-                            Enviar
-
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </section>
-
-            <section className="contact-map">
-
-                <div className="container">
-
-                    <div className="map-placeholder">
-
-                        Mapa
+                        <a
+                            href="https://forms.google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-button"
+                        >
+                            Acessar Formulário →
+                        </a>
 
                     </div>
 
                 </div>
 
             </section>
-
-            <Footer />
         </div>
     )
 }

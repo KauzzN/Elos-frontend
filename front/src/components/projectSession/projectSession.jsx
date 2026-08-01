@@ -3,6 +3,8 @@ import "./projectSession.css"
 import ProjectCard from "../projectCard/projectCard";
 
 import floresta from "../../assets/Floresta.jpg"
+import nascente from "../../assets/nascente2.jpeg"
+
 
 function ProjectsSection() {
 
@@ -17,7 +19,7 @@ function ProjectsSection() {
                 <div className="projects-grid">
 
                     <ProjectCard
-                        image={floresta}
+                        image={nascente}
                         title="Território Vivo"
                         description="Recuperação de nascentes com protagonismo juvenil no Alto Gramame."
                     />

@@ -6,7 +6,6 @@ import paraiba from "../../assets/paraiba.png"
 function Locatios() {
     return (
         <div className="locations-container">
-            <NavBar />
 
             <section className="locations-hero">
 
@@ -76,7 +75,6 @@ function Locatios() {
 
             <CTASection />
 
-            <Footer />
         </div>
     )
 }
